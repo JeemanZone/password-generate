@@ -21,7 +21,7 @@ func main() {
 	keyword, offset, length := getArgs()
 	password := generate(keyword, length, offset)
 
-	template := "关键字:【%s】\n起始坐标：【%d】\n密码长度：【%d】\n所生成的密码为：\n%s"
+	template := "关键字:【%s】\n起始坐标：【%d】\n密码长度：【%d】\n所生成的密码为：\n%s\n"
 	fmt.Printf(template, keyword, offset, length, password)
 }
 
